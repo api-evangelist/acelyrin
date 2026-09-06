@@ -1,0 +1,114 @@
+generated: '2026-09-06'
+method: probed
+source: >-
+  Anonymous HTTPS GET of each /.well-known/ path on every host this record knows:
+  the registrable domain acelyrin.com, its www host, and www.alumis.com — the host
+  acelyrin.com 301-redirects to after the 2025-05-21 Alumis merger. No API baseURL
+  or OpenAPI servers[] host exists for this company.
+note: >-
+  Every probed path returned 404. No WellKnown or SecurityTxt pointer is wired into
+  apis.yml, because no path returned a document — this file records a measured
+  absence, not a served surface.
+hosts:
+- host: acelyrin.com
+  note: Corporate domain; 301 -> http://www.alumis.com/ (final 200).
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
+- host: www.acelyrin.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
+- host: www.alumis.com
+  note: >-
+    Acquirer host that acelyrin.com resolves to. Probed for completeness; a 404 here
+    is a fact about Alumis, not about ACELYRIN, and earns this record no pointer.
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
+contract_discovery:
+  note: >-
+    STEP 0b contract discovery ran against every host above. All missed.
+  probes:
+  - url: https://acelyrin.com/openapi.json
+    status: 404
+  - url: https://acelyrin.com/swagger.json
+    status: 404
+  - url: https://acelyrin.com/api-docs
+    status: 404
+  - url: https://acelyrin.com/llms.txt
+    status: 404
+  - url: https://acelyrin.com/graphql
+    status: 404
+  - url: https://www.acelyrin.com/openapi.json
+    status: 404
+  - url: https://www.acelyrin.com/llms.txt
+    status: 404
+  - url: https://www.acelyrin.com/graphql
+    status: 404
+  - url: https://www.alumis.com/openapi.json
+    status: 404
+  - url: https://www.alumis.com/llms.txt
+    status: 404
+  - url: https://www.alumis.com/graphql
+    status: 404
+  - url: https://api.github.com/orgs/acelyrin
+    status: 404
+    note: No GitHub organization exists under the ACELYRIN name.
