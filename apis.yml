@@ -1,5 +1,5 @@
 aid: acelyrin
-name: ACELYRIN, Inc.
+name: ACELYRIN
 description: 'ACELYRIN, Inc. (Nasdaq: SLRN) was a late-stage clinical biopharmaceutical
   company headquartered in Agoura Hills, California, focused on accelerating the development
   and commercialization of medicines in immunology. Its lead candidates were izokibep,
@@ -65,3 +65,4 @@ x-coverage:
   - url: https://api.github.com/orgs/acelyrin
     status: 404
   checked: '2026-09-06'
+x-legal-name: ACELYRIN, Inc.
